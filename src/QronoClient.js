@@ -1,14 +1,14 @@
 class QronoClient extends Object {
-    API_URL = "https://qrono.dev"
+    API_URL = "https://qrono.dev/api"
 
-    async get(path: string) {
+    async get(path) {
         const url = `${this.API_URL}/${path}`
         const response = await fetch(url)
         const parsedResponse = await response.json()
         return parsedResponse
     }
 
-    async post(path: string, data: Record<string, any>) {
+    async post(path, data) {
         const url = `${this.API_URL}/${path}`
         const response = await fetch(url, {
             body: JSON.stringify(data),
