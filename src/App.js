@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import { QronoCalendar } from 'booking_calendar';
@@ -105,7 +104,7 @@ function App() {
       ):null}
       {message ? (
         <div>
-          <img className='succesImg' src="https://www.clipartmax.com/png/full/179-1795386_patient-success-success-icon-png.png"/>
+          <img className='succesImg' src="https://www.clipartmax.com/png/full/179-1795386_patient-success-success-icon-png.png" alt="clipart checkbox"/>
           <div className='message'>
             {message}
             <button className="next_button" onClick={()=>{setMessage(''); setShowCalendar(true)}}>Create new booking</button>
