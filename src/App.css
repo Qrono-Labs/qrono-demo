@@ -50,7 +50,7 @@ input{
   font-family: 'Poppins';
 }
 
-button {
+.next_button {
   height:3rem;
   width:100%;
   font-family: 'Poppins';

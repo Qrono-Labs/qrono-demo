@@ -78,13 +78,13 @@ function App() {
     <div className="App">
       {showCalendar? <div>
         <QronoCalendar
-          bookingPickerType={'timeRangePicker'}
+          bookingPickerType={'timeIntervalPicker'}
           defaultAvailable={true}
           onSelectStart={(start)=>setStart(start)}
           onSelectEnd={(end)=>setEnd(end)}
           events={events}
         />
-        <button onClick={()=> {setShowCalendar(false);setShowForm(true)}}>Next</button>
+        <button className="next_button" onClick={()=> {setShowCalendar(false);setShowForm(true)}}>Next</button>
         </div>:null}
       {showForm  ? (
         <div>
@@ -99,7 +99,7 @@ function App() {
           <div className='flex'>
             <input type="tel" id="phone" name="phone" placeholder='Phone number' value={phone} onChange={(e) =>setPhone(e.target.value)}/><br/><br/>
           </div>
-          <button onClick={onSubmit}>Create Booking</button>
+          <button className="next_button" onClick={onSubmit}>Create Booking</button>
         </div>
         </div>
       ):null}
@@ -108,7 +108,7 @@ function App() {
           <img className='succesImg' src="https://www.clipartmax.com/png/full/179-1795386_patient-success-success-icon-png.png"/>
           <div className='message'>
             {message}
-            <button onClick={()=>{setMessage(''); setShowCalendar(true)}}>Create new booking</button>
+            <button className="next_button" onClick={()=>{setMessage(''); setShowCalendar(true)}}>Create new booking</button>
           </div>
         </div>
       ):null}
