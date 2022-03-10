@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  font-family: 'Poppins';
+  justify-content: center;
+  display: flex;
 }
 
 .App-logo {
@@ -35,4 +38,62 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+input{
+  height:1rem;
+  margin-bottom: 0.8rem;
+  width:20rem;
+  border-radius: 0.5rem;
+  border:1px solid black;
+  padding:1rem;
+  font-family: 'Poppins';
+}
+
+button {
+  height:3rem;
+  width:100%;
+  font-family: 'Poppins';
+  color:white;
+  background-color: #32ba7c;
+  border:none;
+  border-radius: 0.5rem ;
+  margin-top: 4rem;
+}
+
+.message {
+  margin-top:3rem;
+  width:25rem;
+  height:100vh;
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.5rem;
+  font-family:Poppins;
+}
+
+h2{
+  margin-bottom: 3rem;
+}
+
+.flex {
+  display:flex;
+  justify-content: center;
+}
+
+.justify-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  margin-top: 5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding:2rem;
+  width:fit-content
+}
+
+.succesImg{
+  width:15rem;
+  margin-top: 3rem;
 }
