@@ -78,7 +78,7 @@ function App() {
     <div className="App">
       {showCalendar? <div>
         <QronoCalendar
-          bookingPickerType={'timeIntervalPicker'}
+          bookingPickerType={'bookableEvents'}
           defaultAvailable={true}
           onSelectStart={(start)=>setStart(start)}
           onSelectEnd={(end)=>setEnd(end)}
